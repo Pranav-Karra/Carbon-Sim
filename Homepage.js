@@ -6,7 +6,10 @@ const Homepage = () => {
   const navigate = useNavigate();
 
   const handleStartClick = () => {
-    navigate('/main'); // This should match the path of your main page
+    // Add a small delay to make the transition feel more natural
+    setTimeout(() => {
+      navigate('/main'); // This should match the path of your main page
+    }, 100);
   };
 
   return (
